@@ -7,7 +7,7 @@ const Banner = () => {
     const typewriterRef = useRef(null);
 
     const roles = [
-        'nearly graduated CS student',
+        'Graduating CS student',
         'Unity Developer',
         'Full Stack Developer',
         'Junior Programmer',

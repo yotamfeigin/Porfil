@@ -31,11 +31,13 @@ export const SKILLS = [
 export const TECH_STACK = [
   'Unity',
   'Python',
+  ,'C/C#/C++',
   'JavaScript',
   'ReactJS',
   'NextJS',
   'TypeScript',
   'NodeJS',
+  'SQL',
   'CSS',
   'REST API',
   'MongoDB',
