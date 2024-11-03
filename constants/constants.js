@@ -1,25 +1,25 @@
 export const NAME = 'Yotam Feigin';
 
-export const DESIGNATION = `CS Student | Unity Developer | Private Tutor`;
+export const DESIGNATION = `CS graduate | Unity Developer | React Developer | Private Tutor`;
 
 export const DETAILS = {
   Residence: 'Israel',
   City: 'Ganot',
-  Age: '24',
+  Age: '25',
 };
 
 export const SKILLS = [
   {
     title: 'CS Degree',
-    level: '99%',
+    level: '100%',
   },
   {
     title: 'Unity Developer',
-    level: '82%',
+    level: '83%',
   },
   {
     title: 'React Developer',
-    level: '70%',
+    level: '80%',
   },
 
   {

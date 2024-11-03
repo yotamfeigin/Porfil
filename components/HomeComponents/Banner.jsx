@@ -51,17 +51,24 @@ const Banner = () => {
                                 alt="emoji"
                                 priority
                                 quality={100}
-                                width={3840} // The largest width in your srcSet
-                                height={2160} // An assumed height - you need to adjust this based on your actual image's aspect ratio
-                                srcSet="/images/Wave.gif 640w, /images/Wave.gif 750w, /images/Wave.gif 828w, /images/Wave.gif 1080w, /images/Wave.gif 1200w, /images/Wave.gif 1920w, /images/Wave.gif 2048w, /images/Wave.gif 3840w"
-                                sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 25vw" // Adjust according to your layout needs
-                                style={{ position: 'absolute', width: '100%', height: '100%', left: 0, top: 0, right: 0, bottom: 0, objectFit: 'cover' }}
+                                width={3840} // Actual width
+                                height={2160} // Actual height
+                                sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 25vw"
+                                style={{
+                                    position: 'absolute',
+                                    width: '100%',
+                                    height: '100%',
+                                    left: 0,
+                                    top: 0,
+                                    right: 0,
+                                    bottom: 0,
+                                    objectFit: 'cover',
+                                }}
                             />
-
 
                             {/* Fallback image */}
                             <noscript>
-                                <img
+                                <Image
                                     src="/images/Wave.gif"
                                     alt="emoji"
                                     style={{ position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0, objectFit: 'cover' }}
