@@ -82,4 +82,4 @@ const Banner = () => {
     );
 };
 
-export default Banner;
+export default Banner; // Ensure this is a default export
