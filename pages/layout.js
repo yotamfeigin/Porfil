@@ -31,7 +31,7 @@ export default function Layout({ children }) {
       <div className='flex relative h-full justify-between gap-x-3'>
         {/* left most side */}
         <div
-          className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full overflow-hidden bg-DeepNightBlack shadow-2xl z-50 lg:flex flex-col  lg:relative ${
+          className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full  bg-DeepNightBlack shadow-2xl z-50 lg:flex flex-col  lg:relative  overflow-y-scroll  ${
             intro ? 'flex absolute' : 'hidden'
           }`}>
           <Intro isOpen={intro} setIsOpen={setIntro} />
