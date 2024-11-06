@@ -1,16 +1,15 @@
-// next.config.js
 module.exports = {
-  // Exporting as a static site
-  // You can define exportPathMap to specify the pages to export
-  // Here's an example if you have specific pages to export
-  // Adjust the paths according to your actual pages
+  i18n: {
+    locales: ['en', 'he'], // Replace with your actual locales
+    defaultLocale: 'en', // Define the default locale
+  },
   async exportPathMap() {
     return {
-      '/': { page: '/' },
-      '/about': { page: '/about' },
-      '/portfolio': { page: '/portfolio' },
-      '/contact': { page: '/contact' },
-      // Add more pages as needed
+      '/': { page: '/', query: { __nextDefaultLocale: 'en' } },
+      '/about': { page: '/about', query: { __nextDefaultLocale: 'en' } },
+      '/portfolio': { page: '/portfolio', query: { __nextDefaultLocale: 'en' } },
+      '/contact': { page: '/contact', query: { __nextDefaultLocale: 'en' } },
+      // Add more pages with __nextDefaultLocale if needed
     };
   },
 };

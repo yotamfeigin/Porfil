@@ -10,7 +10,6 @@ const Footer = () => {
                     <div className="mr-1 text-base">
                         <AiFillCopyrightCircle />
                     </div>
-                    <span>2023 All Rights Reserved.</span>
                 </div>
                 <div className="flex items-center">
                 </div>

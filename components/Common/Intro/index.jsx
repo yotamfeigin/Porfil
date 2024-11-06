@@ -12,7 +12,7 @@ import Yotam from '../../../public/images/yotam.jpeg';
 
 const Intro = () => {
   return (
-    <div className="intro-container transform -translate-x-64  "> {/* Transparent background */}
+    <div className="intro-container transform -translate-x-64     "> {/* Transparent background */}
       <div className='slide-right  '>
         {/* fixed at top */}
         <div className='headerr z-50 absolute bg-MidNightBlack backdrop-blur-sm inset-y-0 h-48 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4'>

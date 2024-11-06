@@ -34,13 +34,13 @@ function Background() {
                     <div className="flex flex-col gap-y-4 md:ml-12">
                         <div className=" md:pt-0 pt-4 text-xl text-Snow font-semibold">Experience</div>
                         {isLoading ?
-                            [1, 2, 3].map((item, index) => ( // Added index parameter for key
-                                <ParagraphSkeleton key={index} className={"p-8 h-full w-full relative"} />
-                            ))
-                            :
-                            data && data[1]?.expCards?.map((expData, key) => ( // Changed data to expData to avoid naming conflicts
-                                <Exp_Card key={key} data={expData} />
-                            ))
+                    [1, 2, 3].map((item, index) => ( // Added index parameter for key
+                        <ParagraphSkeleton key={index} className={"p-8 h-full w-full relative"} />
+                    ))
+                    :
+                    data && data[0]?.expCards?.map((eduData, key) => ( // Changed data to eduData to avoid naming conflicts
+                        <Edu_Card key={key} data={eduData} />
+                    ))
                         }
                     </div>
                 </div>
