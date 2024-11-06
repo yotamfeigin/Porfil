@@ -51,19 +51,10 @@ const Banner = () => {
                                 alt="emoji"
                                 priority
                                 quality={100}
-                                width={3840} // Actual width
-                                height={2160} // Actual height
-                                sizes="(max-width: 640px) 100vw, (max-width: 750px) 50vw, 25vw"
-                                style={{
-                                    position: 'absolute',
-                                    width: '100%',
-                                    height: '100%',
-                                    left: 0,
-                                    top: 0,
-                                    right: 0,
-                                    bottom: 0,
-                                    objectFit: 'cover',
-                                }}
+                                width={3840} // Actual width of the image
+                                height={2160} // Actual height of the image
+                                sizes="(max-width: 768px) 50vw, 25vw" // Adjusted for screen sizes
+                                className="absolute inset-0 object-cover" // Center the image
                             />
 
                             {/* Fallback image */}
@@ -71,7 +62,9 @@ const Banner = () => {
                                 <Image
                                     src="/images/Wave.gif"
                                     alt="emoji"
-                                    style={{ position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0, objectFit: 'cover' }}
+                                    width={3840}
+                                    height={2160}
+                                    className="absolute inset-0 object-cover"
                                 />
                             </noscript>
                         </div>
@@ -82,4 +75,4 @@ const Banner = () => {
     );
 };
 
-export default Banner; // Ensure this is a default export
+export default Banner;

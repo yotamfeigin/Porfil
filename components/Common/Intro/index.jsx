@@ -12,8 +12,8 @@ import Yotam from '../../../public/images/yotam.jpeg';
 
 const Intro = () => {
   return (
-    <div className="intro-container transform -translate-x-64"> {/* Shift the entire component left */}
-      <div className='swing-right-bck'>
+    <div className="intro-container transform -translate-x-64 bg-transparent  "> {/* Transparent background */}
+      <div className='slide-right'>
         {/* fixed at top */}
         <div className='headerr z-50 absolute bg-MidNightBlack backdrop-blur-sm inset-y-0 h-48 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4'>
           <Image className='w-20 h-20 rounded-full' src={Yotam} alt='profile picture' />
