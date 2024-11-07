@@ -9,12 +9,20 @@ export default function Layout({ children }) {
   const [intro, setIntro] = useState(false);
   const [showScrollbar, setShowScrollbar] = useState(false);
 
-  // Initial load delay for the scrollbar
+  // Initial load delay for the scrollbar on large screens
   useEffect(() => {
-    const initialTimer = setTimeout(() => setShowScrollbar(true), 700);
-    return () => clearTimeout(initialTimer);
-  }, []);
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) { // lg breakpoint (1024px)
+        const initialTimer = setTimeout(() => setShowScrollbar(true), 700);
+        return () => clearTimeout(initialTimer);
+      }
+    };
 
+    handleResize(); // Check on load
+    window.addEventListener('resize', handleResize); // Add resize listener
+
+    return () => window.removeEventListener('resize', handleResize); // Cleanup
+  }, []);
   // Manage scrollbar visibility when intro is toggled
   useEffect(() => {
     if (intro) {
