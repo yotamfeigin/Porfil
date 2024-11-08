@@ -14,7 +14,7 @@ const MyExpertise = () => {
     );
 
     return (
-        <>
+        <div className="slide-in-elliptic-top-fwd">
             <div className="px-2 md:px-8 py-4 text-lg font-bold text-Snow">My Expertise</div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-2 md:px-8">
                 {isLoading ? (
@@ -27,7 +27,7 @@ const MyExpertise = () => {
                     ))
                 )}
             </div>
-        </>
+        </div>
     );
 };
 
