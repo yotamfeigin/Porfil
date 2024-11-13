@@ -19,15 +19,15 @@ const Banner = () => {
                 <div className="bg-LightGray/10 w-[95%] h-[90%] px-4 py-2 rounded-xl overflow-hidden flex justify-between items-center">
 
                     {/* Left Side: Text */}
-                    <div className="flex flex-col items-start h-full">
+                    <div className="flex flex-col items-start h-full justify-between">
                         <h1 className="text-3xl sm:text-4xl xl:text-5xl text-Snow font-bold tracking-in-expand">
-                            Welcome to my portfolio!
+                            Hey there,<span className="block">Welcome to my portfolio!</span>
                         </h1>
 
-                        <div className="mt-auto py-4 font-cascadia-normal text-Snow text-xs lg:h-auto">
+                        <div className="mb-4 py-4 font-cascadia-normal text-Snow text-xxs lg:h-auto">
                             <span>
                                 {"<"}
-                                <span className="text-Green sm:text-base xl:text-lg font-bold">div</span>
+                                <span className="text-Green sm:text-base xl:text-lg font-bold">p</span>
                                 {">"}{' '}
                                 <span className="text-Snow sm:text-xl xl:text-2xl font-bold">
                                     I am {' '}
@@ -42,7 +42,7 @@ const Banner = () => {
                                     </span>
                                 </span>{' '}
                                 {"</"}
-                                <span className="text-Green sm:text-base xl:text-lg font-bold">div</span>
+                                <span className="text-Green sm:text-base xl:text-lg font-bold">p</span>
                                 {">"}{' '}
                             </span>
                         </div>
