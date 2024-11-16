@@ -27,19 +27,20 @@ const MyWorks = () => {
                     worksData?.map((work, index) => (
                         <a
                             key={index}
-                            href={work.link || "https://yotam-closet.click"}
+                            href={work.link}
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
-                            backgroundImage: `url(${ClosetImage.src})`,
-                            backgroundSize: 'cover',
+                                '--shadow-color': work.color,
+                                backgroundImage: `url(${work.img})`,
+                                backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}
                             className="relative text-white p-4 rounded-lg text-center shadow-pop-tl transition transform duration-300 ease-in-out"
-                            >
+                        >
                             <div className="bg-black bg-opacity-50 p-4 rounded-lg">
-                                <h2 className="text-xl font-semibold">{work.title || "Yotam's Closet"}</h2>
-                                <p className="text-sm mt-2">{work.description || "Explore my online clothing store project."}</p>
+                                <h2 className="text-xl font-semibold">{work.title}</h2>
+                                <p className="text-sm mt-2">{work.description}</p>
                             </div>
                         </a>
                     ))

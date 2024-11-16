@@ -157,6 +157,8 @@ body {
 }
 
 .shadow-pop-tl {
+  --shadow-color: #dd00e9; /* Default shadow color */
+
   transition: box-shadow 0.3s ease; /* Smooth transition back to default */
 }
 .shadow-pop-tl:hover {
@@ -294,29 +296,42 @@ body {
 }
 @-webkit-keyframes shadow-pop-tl {
   0% {
-    -webkit-box-shadow: 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9;
-            box-shadow: 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9;
+    -webkit-box-shadow: 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color),
+      0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color);
+    box-shadow: 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color),
+      0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color);
     -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
   }
   100% {
-    -webkit-box-shadow: -1px -1px #dd00e9, -2px -2px #dd00e9, -3px -3px #dd00e9, -4px -4px #dd00e9, -5px -5px #dd00e9, -6px -6px #dd00e9, -7px -7px #dd00e9, -8px -8px #dd00e9;
-            box-shadow: -1px -1px #dd00e9, -2px -2px #dd00e9, -3px -3px #dd00e9, -4px -4px #dd00e9, -5px -5px #dd00e9, -6px -6px #dd00e9, -7px -7px #dd00e9, -8px -8px #dd00e9;
+    -webkit-box-shadow: -1px -1px var(--shadow-color), -2px -2px var(--shadow-color), -3px -3px var(--shadow-color),
+      -4px -4px var(--shadow-color), -5px -5px var(--shadow-color), -6px -6px var(--shadow-color),
+      -7px -7px var(--shadow-color), -8px -8px var(--shadow-color);
+    box-shadow: -1px -1px var(--shadow-color), -2px -2px var(--shadow-color), -3px -3px var(--shadow-color),
+      -4px -4px var(--shadow-color), -5px -5px var(--shadow-color), -6px -6px var(--shadow-color),
+      -7px -7px var(--shadow-color), -8px -8px var(--shadow-color);
     -webkit-transform: translateX(8px) translateY(8px);
-            transform: translateX(8px) translateY(8px);
+    transform: translateX(8px) translateY(8px);
   }
 }
+
 @keyframes shadow-pop-tl {
   0% {
-    -webkit-box-shadow: 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9;
-            box-shadow: 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9, 0 0 #dd00e9;
+    -webkit-box-shadow: 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color),
+      0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color);
+    box-shadow: 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color),
+      0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color), 0 0 var(--shadow-color);
     -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
   }
   100% {
-    -webkit-box-shadow: -1px -1px #dd00e9, -2px -2px #dd00e9, -3px -3px #dd00e9, -4px -4px #dd00e9, -5px -5px #dd00e9, -6px -6px #dd00e9, -7px -7px #dd00e9, -8px -8px #dd00e9;
-            box-shadow: -1px -1px #dd00e9, -2px -2px #dd00e9, -3px -3px #dd00e9, -4px -4px #dd00e9, -5px -5px #dd00e9, -6px -6px #dd00e9, -7px -7px #dd00e9, -8px -8px #dd00e9;
+    -webkit-box-shadow: -1px -1px var(--shadow-color), -2px -2px var(--shadow-color), -3px -3px var(--shadow-color),
+      -4px -4px var(--shadow-color), -5px -5px var(--shadow-color), -6px -6px var(--shadow-color),
+      -7px -7px var(--shadow-color), -8px -8px var(--shadow-color);
+    box-shadow: -1px -1px var(--shadow-color), -2px -2px var(--shadow-color), -3px -3px var(--shadow-color),
+      -4px -4px var(--shadow-color), -5px -5px var(--shadow-color), -6px -6px var(--shadow-color),
+      -7px -7px var(--shadow-color), -8px -8px var(--shadow-color);
     -webkit-transform: translateX(8px) translateY(8px);
-            transform: translateX(8px) translateY(8px);
+    transform: translateX(8px) translateY(8px);
   }
 }
